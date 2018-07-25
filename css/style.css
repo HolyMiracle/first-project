@@ -11,7 +11,7 @@ body {
 
 header {
 	background: white;
-	width: 85vw;
+	width: 80vw;
 	margin: 0 auto;
 }
 
@@ -62,13 +62,8 @@ main {
 	background-position: 50% 0%;
 }
 
-.about .about-text p:nth-child(2),
-.about .about-text p:nth-child(3) {
-	padding: 20px 0;
-}
-
-.preview-line {
-	margin: 55px auto 0px auto;
+.preview-line-main {
+	margin: 0 auto 0 auto;
 	width: 5%;
 	height: 2px;
 	background: #29cadf;
@@ -98,8 +93,8 @@ h1 {
 }
 
 h2 {
-	margin: 0;
-	font-size: 3vw; 
+	margin: 0 0 55px 0;
+	font-size: 3vw;
 }
 
 .button {
@@ -126,23 +121,43 @@ h2 {
 
 
 
-
 .about {
+	display: flex;
 	margin: 0 auto;
-	width: 1170px;
+	width: 80vw;
+	justify-content: space-between;
 }
 
 .about-text {
 	margin: 160px 85px 0 0;
-	vertical-align: top;
-	display: inline-block;
-	width: 700px;
+	flex: 0 0 60%;
+}
+
+.about-text p:first-child {
+	font-size: 4em;
+}
+
+.about-text p:nth-child(3) {
+	font-size: 2em;
+}
+
+.about-text p {
+	font-size: 1.5em;
+	margin-bottom: 15px;
 }
 
 .about-image {
-	margin-top: 90px;
-	display: inline-block;
+	margin: 90px 50px 0 0;
 	width: 300px;
+	float: right;
+}
+
+.preview-line-about {
+	margin: 0 0 15px 0;
+	text-align: left;
+	width: 10%;
+	height: 2px;
+	background: #29cadf;
 }
 
 
@@ -154,7 +169,7 @@ h2 {
 
 .project-main {
 	margin: 0 auto;
-	width: 1170px;
+	width: 80vw;
 }
 
 .statistic {
