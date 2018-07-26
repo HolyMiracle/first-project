@@ -196,7 +196,7 @@ h2 {
 
 
 .video { 
-	margin: -300px auto 75px auto; 
+	margin: -290px auto 75px auto; 
 	width: 80%;	
 }
 
@@ -681,19 +681,3 @@ footer .footer-content img {
 	padding: 20px 0;
 	float: right;
 }
-
-
-
-@media (max-width: 1200px) {
-	main {
-		
-	}
-	
-	.brands {
-
-	}
-}
-
-width 815px brands & video
-
-img alt
