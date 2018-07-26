@@ -57,7 +57,6 @@ nav a:last-child:hover {
 
 
 main {
-	height: calc(100vh - 80px);
 	color: white;
 	text-align: center;
 	background-image: url(../img/preview-bg.jpg);
@@ -128,7 +127,7 @@ h2 {
 .about {
 	display: flex;
 	margin: 0 auto;
-	width: 80vw;
+	width: 80%;
 	justify-content: space-between;
 }
 
@@ -168,20 +167,19 @@ h2 {
 
 .project {
 	background-color: #f8f8f8;
-	height: 600px;
+	/* height: 600px; */
 }
 
 .project-main {
 	margin: 0 auto;
-	width: 80vw;
+	width: 80%;
 }
 
 .statistic {
-	padding-top: 90px;
+	padding: 90px 0 390px 0;
 	text-align: center;
 	font-size: 12pt;
 	display: flex;
-	flex-direction: row;
 	justify-content: space-between;
 }
 
@@ -197,9 +195,9 @@ h2 {
 
 
 
-.block { 
+.video { 
 	margin: -300px auto 75px auto; 
-	width: 1170px;	
+	width: 80%;	
 }
 
 .brands {
@@ -238,21 +236,28 @@ h2 {
 
 .members {
 	background: #343131;
-	height: 700px;
-	padding-top: 110px;
+	padding: 110px 0 55px 0;
 	text-align: center;
 	color: white;
 }
 
 .members-content {
 	margin: 0 auto;
-	width: 1170px;
+	width: 80%;
+}
+
+.members-content > p {
+	font-size: 4em;
+}
+
+.members-photo {
+	display: flex;
+	justify-content: center;
 }
 
 .members-photo .photo {
 	width: 370px;
 	height: 415px;
-	float: left;
 	margin: 60px 20px 80px 0;
 }
 
@@ -285,6 +290,16 @@ h2 {
 	height: 2px;
 	background: white;
 }
+
+.preview-line-members {
+	margin: 20px auto 0 auto;
+	width: 5%;
+	height: 2px;
+	background: #29cadf;
+}
+
+
+
 
 
 
@@ -666,3 +681,19 @@ footer .footer-content img {
 	padding: 20px 0;
 	float: right;
 }
+
+
+
+@media (max-width: 1200px) {
+	main {
+		
+	}
+	
+	.brands {
+
+	}
+}
+
+width 815px brands & video
+
+img alt
