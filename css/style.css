@@ -1,8 +1,11 @@
+html {
+	font-size: 10px;
+}
+
 body {
 	font-family: Open Sans;
 	padding: 0;
 	margin: 0;
-	font-size: 10px;
 }
 
 * a:hover {
@@ -18,8 +21,8 @@ header {
 }
 
 header div {
-	padding: 30px 0;
-	font-size: 2em;
+	padding: 3rem 0;
+	font-size: 2.5rem;
 }
 
 header div a {
@@ -28,15 +31,17 @@ header div a {
 }
 
 header nav {
-	padding: 30px 0;
-	font-size: 1.6em;
+	display: flex;
+	padding: 3rem 0;
+	font-size: 1.4rem;
 }
 
 nav a {
+	align-items: center;
 	text-decoration: none;
 	color: black;
 	font-weight: bold;
-	padding: 10px 15px;
+	padding: 1rem 1.5rem;
 }
 
 nav a:hover {
@@ -67,13 +72,13 @@ main {
 
 .preview-line-main {
 	margin: 0 auto 0 auto;
-	width: 5%;
-	height: 2px;
+	width: 10rem;
+	height: 0.2rem;
 	background: #29cadf;
 }
 
 .counter {
-	margin-top: 30px;
+	margin-top: 3rem;
 }
 
 .counter table tbody tr:first-child {
@@ -90,29 +95,31 @@ table {
 }
 
 h1 {
-	font-size: 6vw;
+	font-family: Open Sans;
+	font-size: 7rem;
 	margin: 0;
-	padding-top: 140px;
+	padding-top: 14rem;
 }
 
 h2 {
-	margin: 0 0 55px 0;
-	font-size: 3vw;
+	margin: 0 0 5.5rem 0;
+	font-family: Open Sans;
+	font-size: 4rem;
 }
 
 .button {
-	padding: 50px 0px 200px 0px;
+	padding: 5rem 0px 20rem 0px;
 }
 
 .button a {
 	padding: 12px 0;
 	margin: 0 5px;
 	display: inline-block;
-	width: 155px;
+	width: 15.5rem;
 	color: white;
 	border: 1px solid white;
 	text-decoration: none;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 }
 
 .button a:hover {
@@ -125,38 +132,40 @@ h2 {
 
 
 .about {
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-gap: 30px;
 	margin: 0 auto;
 	width: 80%;
-	justify-content: space-between;
 }
 
 .about-text {
-	margin: 160px 85px 0 0;
-	flex: 0 0 60%;
+	grid-column: 1 / 8;
+	margin: 16rem 0 0 0;
 }
 
 .about-text p:first-child {
-	font-size: 4em;
+	font-size: 3rem;
 }
 
 .about-text p:nth-child(3) {
-	font-size: 2em;
+	font-size: 1.5rem;
 }
 
 .about-text p {
-	font-size: 1.5em;
-	margin-bottom: 15px;
+	font-size: 1.4rem;
+	margin-bottom: 1.5rem;
 }
 
 .about-image {
-	margin: 90px 50px 0 0;
-	width: 300px;
-	float: right;
+	grid-column: 8 / -1;
+	margin: 9rem 0 0 0;
+	max-width: 300px;
+	justify-self: end;
 }
 
 .preview-line-about {
-	margin: 0 0 15px 0;
+	margin: 0 0 1.5rem 0;
 	text-align: left;
 	width: 10%;
 	height: 2px;
@@ -167,7 +176,6 @@ h2 {
 
 .project {
 	background-color: #f8f8f8;
-	/* height: 600px; */
 }
 
 .project-main {
@@ -176,43 +184,42 @@ h2 {
 }
 
 .statistic {
-	padding: 90px 0 390px 0;
+	padding: 9rem 0 39rem 0;
 	text-align: center;
-	font-size: 12pt;
-	display: flex;
-	justify-content: space-between;
+	font-size: 1.4rem;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
 }
 
 .statistic img {
-	margin-bottom: 10px;
-	width: 81px;
+	margin-bottom: 1rem;
 }
 
 .statistic div p {
-	margin: 5px 0 0 0;
+	margin: 0.5rem 0 0 0;
 }
 
 
 
 
 .video { 
-	margin: -290px auto 75px auto; 
+	margin: -29rem auto 7.5rem auto; 
 	width: 80%;	
 }
 
 .brands {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: auto;
 	margin: 0 auto;
-	width: 1170px;
-	padding-bottom: 120px;
+	width: 80%;
+	padding-bottom: 12rem;
 }
 
 .brands div {
 	margin: -5px;
-	padding-top: 40px;
+	padding: 4rem;
 	text-align: center;
-	height: 140px;
-	width: 395px;
-	display: inline-block;
 }
 
 .brands div:nth-child(1),
@@ -236,7 +243,7 @@ h2 {
 
 .members {
 	background: #343131;
-	padding: 110px 0 55px 0;
+	padding: 11rem 0 5.5rem 0;
 	text-align: center;
 	color: white;
 }
@@ -251,24 +258,25 @@ h2 {
 }
 
 .members-photo {
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 30px;
 	justify-content: center;
 }
 
 .members-photo .photo {
 	width: 370px;
 	height: 415px;
-	margin: 60px 20px 80px 0;
+	margin: 6rem 0 8rem 0;
 }
 
 .members-photo .photo:hover > img {
 	opacity: 0.25;
-	cursor: pointer;
 }
 
 .members-photo .describe {
 	position: relative;
-	left: 20px;
+	left: 30px;
 	top: -140px;
 	text-align: left;
 	visibility: hidden;
@@ -278,21 +286,39 @@ h2 {
 	visibility: visible;
 }
 
-.members-photo .describe p {
+.members-photo .describe p:first-child {
 	-webkit-margin-before: 0;
 	-webkit-margin-after: 0;
-	padding-bottom: 5px;
+	padding-bottom: 0.7rem;
+	font-size: 16px;
+}
+
+.members-photo .describe p:last-child {
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	font-size: 14px;
+}
+
+.photo .describe a {
+	color: white;
+	text-decoration: none;
+	font-size: 14px;
+	margin-right: 20px;
+}
+
+.photo .describe a:hover {
+	color: #29cadf;
 }
 
 .white-line {
-	margin: 15px 0;
-	width: 40px;
+	margin: 1.5rem 0;
+	width: 4rem;
 	height: 2px;
 	background: white;
 }
 
 .preview-line-members {
-	margin: 20px auto 0 auto;
+	margin: 2rem auto 0 auto;
 	width: 5%;
 	height: 2px;
 	background: #29cadf;
@@ -680,4 +706,11 @@ footer .footer-content div {
 footer .footer-content img {
 	padding: 20px 0;
 	float: right;
+}
+
+
+@media (min-width: 1200px) {
+	html {
+		font-size: 12px;
+	}
 }
